@@ -1,0 +1,339 @@
+.profile-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+    border: none;
+    background-image: url('./Assets/bg.jpg');
+   
+}
+.profile-parent{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+.profile-detials-name{
+    font-size: 24px;
+    
+}
+.profile-detials-role{
+display: flex;
+flex-direction: column;
+margin: 14px 0 24 px 0;
+}
+.profile-detials-role h1{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.primary-text{
+    color: (--white);
+}
+.highlightes-text{
+    color: var(--dark-orange);
+}
+.profile-role-tagline{
+    font-size: 19px;
+    margin: 5px 0 0 0;
+}
+.profile-option .highlighted-btn{
+    margin: 0 0 0 28px;
+    
+}
+.profile-option .highlighted-btn:hover{
+    margin: 0 0 0 28px;
+    background-color: cornsilk;
+    color: #111;
+    
+}
+.profile-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px var(--white) ;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+    
+  }
+.profile-picture-background{
+    height: 92%;
+    width: 92%;
+    background-image: url(./Assets/profile2.png);
+    background-size: cover;
+    border-radius: 51%;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+.profile-picture-background:hover{
+transform: scale(1.07);
+transition: 1s ease-out;
+}
+.colz .colz-icon i{
+    color: white;
+    padding: 8px;
+    padding-left:0px ;
+}
+.colz .colz-icon i:hover{
+transform: scale(1.5);
+}
+@media screen and  (max-width:1110px) {
+    .profile-picture{
+        margin: 0 0px 0 80px;
+    }
+    .profile-detials-name{
+        font-size: 20px;
+    }
+    .profile-detials-role .primary-text{
+        font-size: 12px;
+    }
+    .profile-option .btn{
+        width: 120px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+    
+}
+
+@media screen and  (max-width:910px) {
+    .profile-picture{
+        height: 320px;
+        width: 320px;
+        margin: 0 0 0 4px;
+    }
+}
+@media screen and  (max-width:810px) {
+    .profile-picture{
+        margin: 0 !important;
+    }
+    .profile-parent{
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0 ;
+    }
+    .profile-option{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .profile-detials{
+        margin: 25px 0 0;
+    }
+    .profile-option .highlighted-btn{
+        margin: 0 !important;
+    }
+    .profile-option .profile-detials-role{
+        text-align: center;
+
+    }
+}
+@media screen and  (max-width:375px) {
+    .profile-picture{
+        height: 275px;
+        width: 275px;
+        margin-top: -90px;
+    }
+    .profile-detials{
+        width: 90%;
+    }
+}
+.colz-icon i {
+  font-size: 30px;
+  color: #25D366; /* WhatsApp green for that icon */
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.colz-icon i:hover {
+  transform: scale(1.2);
+  color: #128C7E; /* darker WhatsApp green on hover */
+}
+
+
+.social-icon{
+  color: white;
+  font-size: 24px;
+  margin: 10px;
+  animation: blink 1s infinite;
+}
+
+/* Blinking animation */
+@keyframes blink{
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+
+.profile-container{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.profile-parent{
+  width:90%;
+  max-width:1200px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* LEFT SIDE */
+.profile-details{
+  flex:1;
+}
+
+/* SOCIAL ICONS */
+
+.colz-icon{
+  margin-bottom:15px;
+}
+
+.social-icon{
+  font-size:26px;
+  margin-right:15px;
+  cursor:pointer;
+}
+
+.whatsapp{color:#25D366;}
+.facebook{color:#1877F2;}
+.email{color:red;}
+
+/* TEXT */
+
+.primary-text{
+  font-size:28px;
+}
+
+.highlightes-text{
+  color:rgb(208, 136, 3);
+  font-weight:bold;
+}
+
+.profile-role-tagline{
+  display:block;
+  margin-top:10px;
+  font-size:16px;
+}
+
+/* BUTTONS */
+
+.profile-option{
+  margin-top:20px;
+}
+
+.hirebtn{
+   background-color: #26273c;
+  color: #fff;               /* Text color */
+  font-size: 28px;           /* Text size */
+  padding: 10px 40px;        /* Button padding (size) */
+  border-radius: 78px;        /* Rounded corners */
+  border: 5px;              /* Remove border */
+    border: 2px solid #fff8dc; /* Border color and thickness */
+  transition: all 0.3s ease; 
+}
+.hirebtn:hover {
+  background-color: #ff5823;   /* Optional: darker background on hover */
+  border-color: #fff8dc;           /* Border changes to red on hover */
+  color: #fff;                 /* Keep text white */
+}
+
+
+.Cvbtn{
+   background-color: #ff5823;
+  color: #fff;               /* Text color */
+  font-size: 28px;           /* Text size */
+  padding: 10px 40px;        /* Button padding (size) */
+  border-radius: 78px;        /* Rounded corners */
+  border: 5px;              /* Remove border */
+    border: 2px solid #fff8dc; /* Border color and thickness */
+  transition: all 0.3s ease; 
+}
+.Cvbtn:hover {
+   /* Optional: darker background on hover */
+  border-color: #26273c;           /* Border changes to red on hover */
+  color: #fff;                 /* Keep text white */
+}
+
+
+
+/* PROFILE IMAGE */
+
+.profile-picture{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.profile-picture-background{
+  width:340px;
+  height:450px;
+  border-radius:30%;
+  background:url("./Assets//profile2.png");
+  background-size:cover;
+  background-position:center;
+}
+
+/* -------------------- */
+/* RESPONSIVE DESIGN */
+/* -------------------- */
+
+/* Tablet */
+
+@media screen and (max-width:992px){
+
+.profile-parent{
+  flex-direction:column;
+  text-align:center;
+}
+
+.profile-picture{
+  margin-top:40px;
+}
+
+.profile-picture-background{
+  width:260px;
+  height:260px;
+}
+
+.primary-text{
+  font-size:24px;
+}
+
+}
+
+/* Mobile */
+
+@media screen and (max-width:600px){
+
+.primary-text{
+  font-size:20px;
+}
+
+.profile-role-tagline{
+  font-size:14px;
+}
+
+.social-icon{
+  font-size:22px;
+}
+
+.profile-picture-background{
+  width:200px;
+  height:200px;
+}
+
+.btn1{
+  padding:8px 18px;
+  font-size:14px;
+}
+
+}
+

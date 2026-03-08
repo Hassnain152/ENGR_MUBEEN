@@ -1,0 +1,22 @@
+/* Footer container */
+.footer-container{
+  width:100%;
+  overflow:hidden; /* prevents image spilling horizontally */
+  position:relative;
+}
+
+/* Wave image */
+.wave-img{
+  width:100%;           /* full width of container */
+     /* prevent it from being too wide */
+  height:auto;          /* maintain aspect ratio */
+  display:block;
+  margin:0 auto;        /* center image */
+}
+
+/* HIDE IMAGE ON MOBILE & TABLET */
+@media screen and (max-width: 992px){
+  .wave-img{
+    display:none;
+  }
+}

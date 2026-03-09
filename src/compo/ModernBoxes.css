@@ -1,0 +1,123 @@
+/* Container */
+.boxes-container {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* BIG BOX */
+.big-box {
+  flex: 2 1 400px; /* grow, shrink, basis */
+  background: orange;
+  
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-image {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* DIPLOMA CARDS */
+.diploma-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.diploma-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.diploma-card:hover {
+  transform: translateY(-8px);
+}
+
+.diploma-card h3 {
+  font-size: 16px;
+  color: #ff2f00;
+}
+
+.diploma-card p {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.diploma-card span {
+  font-size: 13px;
+  color: gray;
+}
+
+/* SMALL BOXES */
+.small-boxes {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.small-box {
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.small-box img {
+  width: 100%;
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .boxes-container {
+    flex-direction: column;
+  }
+
+  .big-box,
+  .small-boxes {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .diploma-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-heading {
+    font-size: 22px;
+  }
+
+  .small-boxes {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .small-box {
+    width: 100%;
+  }
+}

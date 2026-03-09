@@ -32,7 +32,7 @@ export default function Profile() {
 
           <div className="profile-detials-name">
             <span className="primary-text">
-              Hello I'M <span className="highlightes-text">Engineer lllMubeen Tahir</span>
+              Hello I'M <span className="highlightes-text">Engineer Mubeen Tahir</span>
             </span>
           </div>
 

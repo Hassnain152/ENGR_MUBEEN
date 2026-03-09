@@ -1,0 +1,81 @@
+/* Container for all experiences */
+.experience-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+/* Each experience card */
+.experience-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Job title */
+.exp-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+/* Company and duration */
+.exp-company {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.exp-duration {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Project name */
+.exp-project {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+/* Responsibilities list */
+.exp-responsibilities {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive - small screens */
+@media (max-width: 768px) {
+  .experience-container {
+    width: 95%;
+    padding: 10px 0;
+  }
+
+  .experience-card {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .exp-title {
+    font-size: 1.2rem;
+  }
+
+  .exp-company, .exp-project, .exp-responsibilities {
+    font-size: 0.9rem;
+  }
+}

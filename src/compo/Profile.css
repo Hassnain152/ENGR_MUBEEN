@@ -337,3 +337,59 @@ transform: scale(1.5);
 
 }
 
+
+
+
+
+.profile-option{
+  margin-top:20px;
+}
+
+.hirebtn,
+.Cvbtn{
+  padding:12px 30px;
+  font-size:18px;
+  border:none;
+  border-radius:25px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+/* Button colors */
+.hirebtn{
+  background-color:#ff5823;
+  color:white;
+}
+
+.Cvbtn{
+  background-color:transparent;
+  border:2px solid #ff5823;
+  color:#ff5823;
+}
+
+/* Hover */
+.hirebtn:hover{
+  background-color:#ff2f00;
+}
+
+.Cvbtn:hover{
+  background-color:#ff5823;
+  color:white;
+}
+
+
+/* 🔽 Mobile Responsive Fix */
+
+@media (max-width:576px){
+
+.hirebtn,
+.Cvbtn{
+  padding:8px 18px;   /* smaller buttons */
+  font-size:14px;     /* smaller text */
+}
+
+.profile-option{
+  gap:10px !important;  /* smaller gap between buttons */
+}
+
+}

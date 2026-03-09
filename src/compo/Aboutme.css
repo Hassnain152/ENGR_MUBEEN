@@ -58,3 +58,90 @@
   color: white;    
   background-color: #fe9804;             /* Keep text white */
 }
+
+
+/* Section heading */
+
+.Aftr{
+  color: gray;
+  letter-spacing:2px;
+}
+
+
+/* Container fix */
+
+.about-container{
+  width:75%;
+  margin:auto;
+}
+
+
+/* Resume Button */
+
+.abt-btn{
+  padding:10px 25px;
+  background:#ff5823;
+  color:white;
+  border:none;
+  border-radius:25px;
+  font-size:16px;
+  transition:0.3s;
+}
+
+.abt-btn:hover{
+  background:#ff2f00;
+}
+
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.about-container{
+  width:90%;
+}
+
+}
+
+
+/* Mobile */
+
+@media (max-width:576px){
+
+.about-container{
+  width:100%;
+}
+
+}
+
+@media (max-width:576px){
+
+img{
+  display:block;
+  margin:auto;
+}
+
+}
+
+/* Mobile Responsive Fix */
+
+@media (max-width:576px){
+
+.container,
+.row,
+[class*="col-"],
+.boxes-container,
+.big-box,
+.small-boxes,
+.small-box,
+.diploma-card,
+.education-card,
+.stat-box,
+.profile-parent,
+.profile-details{
+    
+    width:100% !important;
+    max-width:100% !important;
+}
+
+}

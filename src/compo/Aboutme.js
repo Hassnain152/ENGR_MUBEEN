@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Card } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Aboutme.css";
 import img8 from "./Assets/picaa.jpeg";
 
 export default function AboutMe() {
+
+   useEffect(() => {
+          Aos.init({ duration: 2000 });
+        }, []);
   return (
     <>
       <div className="text-center mt-3">
-        <h1>ABOUT ME</h1>
+        <h1 data-aos="zoom-in">ABOUT ME</h1>
         <p className="Aftr">WHY CHOOSE ME</p>
       </div>
 

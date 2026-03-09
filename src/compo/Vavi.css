@@ -1,0 +1,24 @@
+.Vavi-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.Vavi-parent {
+    width: 100%;
+    max-width: 1920px;
+}
+
+.Vavi-parent img {
+    width: 100%;
+    height: auto; /* lets image keep aspect ratio */
+    display: block; /* removes inline spacing issues */
+}
+
+@media only screen and (max-width: 1110px) {
+    .Vavi-parent {
+        display: flex;
+        align-items: flex-end;
+    }
+}

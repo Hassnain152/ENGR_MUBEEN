@@ -30,21 +30,21 @@ export default function Profile() {
             </div>
           </div>
 
-          <div className="profile-detials-name">
+          <div className="profile-details-name">
             <span className="primary-text">
-              Hello I'M <span className="highlightes-text">Engineer Mubeen Tahir</span>
+              Hello I'M <span className="highlighted-text">Engineer Mubeen Tahir</span>
             </span>
           </div>
 
-          <div className="profile-detials-role">
+          <div className="profile-details-role">
             <h2>
               <Typical
                 steps={[
-                  "Engr Mubeen 🔴",2000,
-                  "Civil Engineer 🏗",2000,
-                  "Project Engineer 👷",2000,
-                  "Site Engineer 🚧",2000,
-                  "Project Management",2000,
+                  "Engr Mubeen 🔴", 2000,
+                  "Civil Engineer 🏗", 2000,
+                  "Project Engineer 👷", 2000,
+                  "Site Engineer 🚧", 2000,
+                  "Project Management", 2000,
                 ]}
                 loop={Infinity}
               />

@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { Card } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useEffect } from "react";
 import "./Aboutme.css";
 import img8 from "./Assets/picaa.jpeg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function AboutMe() {
 
-   useEffect(() => {
-          Aos.init({ duration: 2000 });
-        }, []);
+  useEffect(() => {
+     Aos.init({ duration: 2000 });
+   }, []);
+
   return (
     <>
       <div className="text-center mt-3">
@@ -20,23 +19,24 @@ export default function AboutMe() {
 
       <div className="container mt-5 mb-5 w-75">
         <div className="row align-items-center">
-          {/* Image Column */}
+
           <div className="col-md-6 mb-4 mb-md-0">
             <img src={img8} alt="About Me" className="img-fluid rounded" />
           </div>
 
-          {/* Text Column */}
           <div className="col-md-6">
-            <Card>
-              <Card.Body>
-                <Card.Text>
-                  I am a Civil Engineer with experience in construction planning, 
-                  site management, and structural design, along with a knack for 
-                  delivering projects efficiently and safely. Strong professional 
+            <div className="card">
+              <div className="card-body">
+
+                <p>
+                  I am a Civil Engineer with experience in construction planning,
+                  site management, and structural design, along with a knack for
+                  delivering projects efficiently and safely. Strong professional
                   with a BSc in Civil Engineering, willing to be an asset for an organization.
-                </Card.Text>
+                </p>
 
                 <h5 className="mt-4">Here are a few highlights:</h5>
+
                 <ul>
                   <li>Goal-oriented and deadline-focused</li>
                   <li>Site supervision and quality control</li>
@@ -46,15 +46,18 @@ export default function AboutMe() {
                 </ul>
 
                 <div className="text-center mt-4">
-                   <a href="Engineer Mubeen.pdf" download="Engineer Mubeen.pdf">
-                    <button className="abt-btn ">
+                  <a href="Engineer Mubeen.pdf" download>
+                    <button className="abt-btn">
                       Get Resume
                     </button>
                   </a>
                 </div>
-              </Card.Body>
-            </Card>
+
+              </div>
+            </div>
+
           </div>
+
         </div>
       </div>
     </>

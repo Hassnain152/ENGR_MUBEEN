@@ -1,24 +1,27 @@
-import React, { useEffect,  } from "react";
+import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./ModernBoxes.css";
-import box1 from "./Assets/box1.png"
-import box2 from "./Assets/box2.jpg"
-import box3 from "./Assets/box3.png"
+import box1 from "./Assets/box1.png";
+import box2 from "./Assets/box2.jpg";
+import box3 from "./Assets/box3.png";
 
 export default function ModernBoxes() {
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-      }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="boxes-container">
 
-      {/* Big Box */}
       <div className="big-box">
 
-        <img src={box1} alt="profile" className="big-image"/>
+        <img src={box1} alt="profile" className="big-image" />
 
-        <h1 className="section-heading" style={{color:"black"}}>Certification And Diploma</h1>
+        <h1 className="section-heading" style={{ color: "black" }}>
+          Certification And Diploma
+        </h1>
 
         <div className="diploma-container">
 
@@ -44,21 +47,25 @@ export default function ModernBoxes() {
 
       </div>
 
-
-      {/* Right Side Small Boxes */}
-
       <div className="small-boxes">
 
         <div className="small-box">
           <img src={box2} alt="project" />
-           <h1 className="section-heading" style={{color:"white"}}>Approval</h1>
+          <h1 className="section-heading" style={{ color: "white" }}>
+            Approval
+          </h1>
           <p>Approved by Neom as Project Civil Engineer. site supervision.</p>
         </div>
 
         <div className="small-box">
           <img src={box3} alt="project" />
-          <h1 className="section-heading" style={{color:"white"}}>Training</h1>
-          <p>Fire Safety Training - Confined space Training - Excavation Training - Work Permit System - EquipmentSafety - Adverse Weather Conditions</p>
+          <h1 className="section-heading" style={{ color: "white" }}>
+            Training
+          </h1>
+          <p>
+            Fire Safety Training - Confined space Training - Excavation Training -
+            Work Permit System - Equipment Safety - Adverse Weather Conditions
+          </p>
         </div>
 
       </div>

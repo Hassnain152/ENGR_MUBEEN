@@ -1,22 +1,32 @@
-/* Footer container */
-.footer-container{
-  width:100%;
-  overflow:hidden; /* prevents image spilling horizontally */
-  position:relative;
+.footer-container {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Wave image */
-.wave-img{
-  width:100%;           /* full width of container */
-     /* prevent it from being too wide */
-  height:auto;          /* maintain aspect ratio */
-  display:block;
-  margin:0 auto;        /* center image */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-/* HIDE IMAGE ON MOBILE & TABLET */
-@media screen and (max-width: 992px){
-  .wave-img{
-    display:none;
-  }
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+  color: #fff;
+  margin: 3px 0;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #00aced; /* Facebook blue on hover */
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
 }

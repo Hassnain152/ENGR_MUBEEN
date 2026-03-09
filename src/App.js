@@ -1,12 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Allcomp from "./compo/Allcomp"
+import Allcomp from "./compo/Allcomp";
 
 function App() {
   return (
     <div className="App">
-     <Allcomp/>
-     
+      <Allcomp />
     </div>
   );
 }

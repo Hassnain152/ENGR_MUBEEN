@@ -1,13 +1,39 @@
-// import React from "react";
-// import "./Footer.css";       // ← Make sure this line is added
-// import img1 from "./Assets/bg2.png";
+import React from "react";
+import "./Footer.css";
 
-// export default function Footer() {
-//   return (
-//     <div className="footer-container">
-//       <div className="wave">
-//         <img src={img1} alt="wave background" className="wave-img" />
-//       </div>
-//     </div>
-//   );
-// }
+export default function Footer() {
+  return (
+    <footer className="footer-container">
+      <div className="footer-content">
+
+        {/* Contact Info */}
+        <div className="footer-section">
+          <h3>Contact</h3>
+          <p>Phone: +966 59 703 8278</p>
+          <p>Email: mubeentahir1201@gmail.com</p>
+        </div>
+
+        {/* Social Links */}
+        <div className="footer-section">
+          <h3>Follow Me</h3>
+          <div className="social-icons">
+            <a 
+              href="https://www.facebook.com/mubeen.tahir.bhatti" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="footer-bottom">
+        <p>© 2026 Craft&Code. All rights reserved.</p>
+        <p>Your Website Is Call Away</p>
+        <p>+966503045722</p>
+      </div>
+    </footer>
+  );
+}

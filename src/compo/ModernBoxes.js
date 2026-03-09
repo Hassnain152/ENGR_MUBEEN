@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect,  } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./ModernBoxes.css";
-import img from "./Assets/picaa.jpeg";
 import box1 from "./Assets/box1.png"
 import box2 from "./Assets/box2.jpg"
 import box3 from "./Assets/box3.png"

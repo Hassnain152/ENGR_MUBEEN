@@ -95,7 +95,7 @@ export default function Exprnce() {
               }, []);
   return (
     <div className="experience-container">
-      <h2 className="section-title"  data-aos="zoom-in">Work Experience</h2>
+      <h2 className="section-title"  data-aos="zoom-in">Work Experience.</h2>
       {experiences.map((exp, index) => (
         <div className="experience-card" key={index}>
           <h3 className="exp-title">{exp.title}</h3>

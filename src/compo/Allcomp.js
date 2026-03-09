@@ -4,7 +4,7 @@ import Aboutme from "./Aboutme";
 import Footer from "./Footer";
 import Edu from "./Edu";
 import Mydata from "./Mydata"
-import ModernBoxes from './ModernBoxes'; // default import
+import ModernBoxes from './ModernBoxes'; 
 
 import Exprnce from "./Exprnce";
 import Foooter from "./Foooter";

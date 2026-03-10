@@ -59,7 +59,7 @@ const experiences = [
   },
   {
     title: "Civil Site Engineer.",
-    company: "ARCO Construction Pvt. Limited - Pakistan",
+    company: "ARCO Construction Pvt. Limited-Pakistan",
     duration: "Jan 2013 - Dec 2016",
     project: "Aqwa Qaseer Ul Maqasid Trust Hospital",
     responsibilities: [

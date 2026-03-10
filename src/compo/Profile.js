@@ -40,9 +40,9 @@ export default function Profile() {
             <h2>
               <Typical
                 steps={[
-                  "Engr Mubeen 🔴", 2000,
-                  "Civil Engineer 🏗", 2000,
-                  "Project Engineer 👷", 2000,
+                  "Engr Mubeen Tahir Bhatti🔴", 2000,
+                  "Civil Superintentent Engineer 🏗", 2000,
+                  "Civil Project Engineer 👷", 2000,
                   "Site Engineer 🚧", 2000,
                   "Project Management", 2000,
                 ]}
